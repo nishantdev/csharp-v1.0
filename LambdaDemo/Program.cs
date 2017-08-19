@@ -8,7 +8,16 @@ namespace LambdaDemo
         {
             Action Hello = () => Console.WriteLine("Hello");
             Hello();
+
+           Predicate<string> Validator = World =>
+           {
+               return World.Length > 3;
+           };
+
+            Console.WriteLine(Validator("Test"));
             Console.ReadKey(true);
         }
+
+       
     }
 }
