@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace ArgumentsDemo
 {
@@ -6,9 +7,24 @@ namespace ArgumentsDemo
     {
         static void Main(string[] args)
         {
-            foreach(string arg in args)
-            Console.WriteLine(arg);
-            Console.ReadKey(true);
+            //Set the argument values to the following: red yellow 50 10
+
+            ForegroundColor = (ConsoleColor)Enum.Parse(typeof(ConsoleColor), args[0], true);
+
+            BackgroundColor = (ConsoleColor)Enum.Parse(typeof(ConsoleColor), args[1], true);
+
+            WindowWidth = int.Parse(args[2]);
+
+            WindowHeight = int.Parse(args[3]);
+
+            WriteLine($"There are {args.Length} arguments.");
+
+            foreach (var arg in args)
+            {
+                WriteLine(arg);
+            }
+
+            ReadKey(true);
         }
     }
 }
