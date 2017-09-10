@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch04_Dictionaries", "Ch04_D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch04_Internationalization", "Ch04_Internationalization\Ch04_Internationalization.csproj", "{C78AE354-EEA6-466D-8617-7A64F380D813}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch05_Debugging", "Ch05_Debugging\Ch05_Debugging.csproj", "{80E8A554-AA8D-40F2-AB22-03C894D530C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch05_Debugging", "Ch05_Debugging\Ch05_Debugging.csproj", "{80E8A554-AA8D-40F2-AB22-03C894D530C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
